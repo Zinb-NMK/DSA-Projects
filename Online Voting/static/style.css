@@ -1,0 +1,114 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.home-page {
+    background-image: url("/static/background.jpg"); /* Path to your background image */
+    background-size: cover;    /* Ensures the image covers the entire screen */
+    background-position: center center;  /* Centers the image in the viewport */
+    background-attachment: fixed;  /* Keeps the background fixed while scrolling */
+    background-repeat: no-repeat;  /* Prevents repeating the image */
+    color: white;
+    height: 100vh;  /* Makes the container cover the full height of the viewport */
+    padding-bottom: 50px; /* Adds space for footer */
+}
+
+/* Header and Navigation */
+header {
+    background: rgba(0, 0, 0, 0.5);  /* Dark overlay for readability */
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    margin: 20px 0;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;  /* Change link color to black */
+    background-color: #fff; /* Button background */
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #fff;
+    background-color: #007BFF; /* Button hover background */
+}
+
+/* Results Container */
+.results-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.results-heading {
+    font-size: 2.5rem; /* Increase size of the heading */
+    color: black;
+    font-weight: bold;
+}
+
+/* Results Box */
+.results-box {
+    display: inline-block;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    width: 80%; /* Adjust the width as needed */
+}
+
+.result-item {
+    font-size: 1.2rem; /* Size of the result items */
+    color: black; /* Text color for the party and vote counts */
+    margin-bottom: 5px; /* Reduced space between points and text */
+}
+
+.result-item:hover {
+    color: #007BFF; /* Hover color */
+}
+
+/* Form and Footer */
+form {
+    width: 50%;
+    margin: 20px auto;
+    padding: 10px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: white; /* Set text color to black */
+    position: fixed; /* Fixed position at the bottom */
+    width: 100%;
+    bottom: 0; /* Aligns it at the bottom of the page */
+    left: 0;
+}
+
+/* General Button Style */
+button {
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Add Candidate</title>
+</head>
+<body>
+    <header>
+        <h1>Add a Candidate</h1>
+    </header>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/cast_vote">Cast Vote</a>
+        <a href="/results">View Results</a>
+    </nav>
+    <form method="POST">
+        <label for="voter_id">Voter ID:</label>
+        <input type="text" id="voter_id" name="voter_id" required>
+
+        <label for="candidate_name">Candidate Name:</label>
+        <input type="text" id="candidate_name" name="candidate_name" required>
+
+        <button type="submit">Add Candidate</button>
+    </form>
+    <footer>
+        &copy; 2025 Online Voting System. All rights reserved.
+    </footer>
+</body>
+</html>

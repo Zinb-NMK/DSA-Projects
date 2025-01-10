@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Cast Vote</title>
+</head>
+<body>
+    <header>
+        <h1>Cast Your Vote</h1>
+    </header>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/add_candidate">Add Candidate</a>
+        <a href="/results">View Results</a>
+    </nav>
+    <form method="POST">
+        <label for="voter_id">Voter ID:</label>
+        <input type="text" id="voter_id" name="voter_id" required>
+
+        <label for="selected_party">Select Political Party:</label>
+        <select id="selected_party" name="selected_party" required>
+            {% for party in political_parties %}
+                <option value="{{ party }}">{{ party }}</option>
+            {% endfor %}
+        </select>
+
+        <button type="submit">Vote</button>
+    </form>
+    <footer>
+        &copy; 2025 Online Voting System. All rights reserved.
+    </footer>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Election Results</title>
+</head>
+<body class="home-page">
+    <header>
+        <h1>Election Results</h1>
+    </header>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/add_candidate">Add Candidate</a>
+        <a href="/cast_vote">Cast Vote</a>
+    </nav>
+
+    <div class="results-container">
+        <h2 class="results-heading">Voting Results</h2>
+        <div class="results-box">
+            <ul>
+                {% for party, vote_count in candidates.items() %}
+                    <li class="result-item">{{ party }}: {{ vote_count }} votes</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 Online Voting System. All rights reserved.
+    </footer>
+</body>
+</html>
